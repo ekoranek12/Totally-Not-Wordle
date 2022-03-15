@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var input: String = "Hello "
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Spacer()
+            GameBoardView()
+            Spacer()
+
+            KeyboardView(input: $input)
+        }
     }
 }
 

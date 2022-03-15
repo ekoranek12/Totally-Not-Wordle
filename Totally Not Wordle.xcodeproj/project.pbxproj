@@ -11,6 +11,11 @@
 		870B992527E013A200402B1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B992427E013A200402B1F /* ContentView.swift */; };
 		870B992727E013A200402B1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870B992627E013A200402B1F /* Assets.xcassets */; };
 		870B992A27E013A200402B1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870B992927E013A200402B1F /* Preview Assets.xcassets */; };
+		870B993127E013EE00402B1F /* KeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B993027E013EE00402B1F /* KeyView.swift */; };
+		870B993327E0176200402B1F /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870B993227E0176200402B1F /* KeyboardView.swift */; };
+		87D2607D27E0207000F04EA4 /* GuessLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2607C27E0207000F04EA4 /* GuessLetterView.swift */; };
+		87D2607F27E022B400F04EA4 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2607E27E022B400F04EA4 /* GuessView.swift */; };
+		87D2608127E0259E00F04EA4 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2608027E0259E00F04EA4 /* GameBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		870B992427E013A200402B1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		870B992627E013A200402B1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870B992927E013A200402B1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		870B993027E013EE00402B1F /* KeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyView.swift; sourceTree = "<group>"; };
+		870B993227E0176200402B1F /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		87D2607C27E0207000F04EA4 /* GuessLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessLetterView.swift; sourceTree = "<group>"; };
+		87D2607E27E022B400F04EA4 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		87D2608027E0259E00F04EA4 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,11 @@
 				870B992427E013A200402B1F /* ContentView.swift */,
 				870B992627E013A200402B1F /* Assets.xcassets */,
 				870B992827E013A200402B1F /* Preview Content */,
+				870B993027E013EE00402B1F /* KeyView.swift */,
+				870B993227E0176200402B1F /* KeyboardView.swift */,
+				87D2607C27E0207000F04EA4 /* GuessLetterView.swift */,
+				87D2607E27E022B400F04EA4 /* GuessView.swift */,
+				87D2608027E0259E00F04EA4 /* GameBoardView.swift */,
 			);
 			path = "Totally Not Wordle";
 			sourceTree = "<group>";
@@ -138,7 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				870B992527E013A200402B1F /* ContentView.swift in Sources */,
+				870B993327E0176200402B1F /* KeyboardView.swift in Sources */,
+				87D2607F27E022B400F04EA4 /* GuessView.swift in Sources */,
+				87D2607D27E0207000F04EA4 /* GuessLetterView.swift in Sources */,
 				870B992327E013A200402B1F /* Totally_Not_WordleApp.swift in Sources */,
+				87D2608127E0259E00F04EA4 /* GameBoardView.swift in Sources */,
+				870B993127E013EE00402B1F /* KeyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
