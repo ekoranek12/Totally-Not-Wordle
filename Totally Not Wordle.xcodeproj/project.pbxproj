@@ -16,6 +16,7 @@
 		87D2607D27E0207000F04EA4 /* GuessLetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2607C27E0207000F04EA4 /* GuessLetterView.swift */; };
 		87D2607F27E022B400F04EA4 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2607E27E022B400F04EA4 /* GuessView.swift */; };
 		87D2608127E0259E00F04EA4 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2608027E0259E00F04EA4 /* GameBoardView.swift */; };
+		87D2608327E029D800F04EA4 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D2608227E029D800F04EA4 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		87D2607C27E0207000F04EA4 /* GuessLetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessLetterView.swift; sourceTree = "<group>"; };
 		87D2607E27E022B400F04EA4 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		87D2608027E0259E00F04EA4 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		87D2608227E029D800F04EA4 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				87D2607C27E0207000F04EA4 /* GuessLetterView.swift */,
 				87D2607E27E022B400F04EA4 /* GuessView.swift */,
 				87D2608027E0259E00F04EA4 /* GameBoardView.swift */,
+				87D2608227E029D800F04EA4 /* ViewModel.swift */,
 			);
 			path = "Totally Not Wordle";
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 				87D2607D27E0207000F04EA4 /* GuessLetterView.swift in Sources */,
 				870B992327E013A200402B1F /* Totally_Not_WordleApp.swift in Sources */,
 				87D2608127E0259E00F04EA4 /* GameBoardView.swift in Sources */,
+				87D2608327E029D800F04EA4 /* ViewModel.swift in Sources */,
 				870B993127E013EE00402B1F /* KeyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

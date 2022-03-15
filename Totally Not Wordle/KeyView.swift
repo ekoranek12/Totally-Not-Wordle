@@ -9,21 +9,32 @@ import SwiftUI
 
 
 struct KeyView: View {
-    @Binding var input: String
+    @EnvironmentObject var viewModel: ViewModel
     var letter: String
 
     var body: some View {
         Button {
-            input.append(letter)
+            viewModel.input.append(letter)
         } label: {
             Text(letter)
-                .font(.system(.body, design: .monospaced))
+                .font(.system(.body, design: .monospaced).bold())
                 .padding(10)
                 .foregroundColor(.white)
                 .background {
                     RoundedRectangle(cornerRadius: 12)
-                        .fill(.gray)
+                        .fill(backgroundColor)
                 }
+        }
+    }
+
+
+    private var backgroundColor: Color {
+        if viewModel.correctPositions.contains(letter) {
+            return .green
+        } else if viewModel.correctLetters.contains(letter) {
+            return .yellow
+        } else {
+            return .gray
         }
     }
 }
@@ -32,6 +43,7 @@ struct KeyView: View {
 
 struct KeyView_Previews: PreviewProvider {
     static var previews: some View {
-        KeyView(input: .constant(""), letter: "A")
+        KeyView(letter: "A")
+            .environmentObject(ViewModel.preview)
     }
 }

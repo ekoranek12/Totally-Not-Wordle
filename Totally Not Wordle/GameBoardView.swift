@@ -9,14 +9,22 @@ import SwiftUI
 
 
 struct GameBoardView: View {
-    var guesses: [String] = []
+    @EnvironmentObject var viewModel: ViewModel
+
 
     var body: some View {
         VStack {
-            ForEach(guesses.padded(length: 6, padding: " "), id: \.self) { guess in
+            ForEach(guesses, id: \.self) { guess in
                 GuessView(input: guess)
             }
         }
+    }
+
+
+    private var guesses: [String] {
+        let allInput = viewModel.guesses + [viewModel.input]
+        let padded = allInput.padded(length: 6, padding: " ")
+        return padded
     }
 }
 
@@ -24,7 +32,8 @@ struct GameBoardView: View {
 
 struct GameBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        GameBoardView(guesses: ["TACOS", "PIZZA", "PHONE"])
+        GameBoardView()
+            .environmentObject(ViewModel.preview)
     }
 }
 

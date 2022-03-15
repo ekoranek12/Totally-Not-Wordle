@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct KeyboardView: View {
-    @Binding var input: String
+    @EnvironmentObject var viewModel: ViewModel
 
     let row1 = ["Q","W","E","R","T","Y","U","I","O","P"]
     let row2 = ["A", "S", "D", "F", "G", "H", "J", "K", "L"]
@@ -19,13 +19,13 @@ struct KeyboardView: View {
         VStack {
             HStack(spacing: 4) {
                 ForEach(row1, id: \.self) { letter in
-                    KeyView(input: $input, letter: letter)
+                    KeyView(letter: letter)
                 }
             }
 
             HStack(spacing: 4) {
                 ForEach(row2, id: \.self) { letter in
-                    KeyView(input: $input, letter: letter)
+                    KeyView(letter: letter)
                 }
             }
 
@@ -44,11 +44,11 @@ struct KeyboardView: View {
                 }
 
                 ForEach(row3, id: \.self) { letter in
-                    KeyView(input: $input, letter: letter)
+                    KeyView(letter: letter)
                 }
 
                 Button {
-                    input = String(input.dropLast())
+                    viewModel.input = String(viewModel.input.dropLast())
                 } label: {
                     Image(systemName: "delete.backward")
                         .font(.body)
@@ -68,6 +68,7 @@ struct KeyboardView: View {
 
 struct KeyboardView_Previews: PreviewProvider {
     static var previews: some View {
-        KeyboardView(input: .constant(""))
+        KeyboardView()
+            .environmentObject(ViewModel.preview)
     }
 }

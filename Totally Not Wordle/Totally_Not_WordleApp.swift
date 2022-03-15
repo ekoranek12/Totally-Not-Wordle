@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Totally_Not_WordleApp: App {
+    @StateObject var viewModel = ViewModel()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(viewModel)
         }
     }
 }

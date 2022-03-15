@@ -8,15 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var input: String = "Hello "
-
     var body: some View {
         VStack {
             Spacer()
             GameBoardView()
             Spacer()
-
-            KeyboardView(input: $input)
+            KeyboardView()
+            Spacer()
         }
     }
 }
@@ -24,5 +22,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(ViewModel.preview)
     }
 }
