@@ -15,6 +15,12 @@ class ViewModel: ObservableObject {
     @Published var correctLetters: [String] = []
 
     @Published var input: String = ""
+
+
+    func addLetter(_ letter: String) {
+        guard input.count < 5 else { return }
+        input.append(letter)
+    }
 }
 
 

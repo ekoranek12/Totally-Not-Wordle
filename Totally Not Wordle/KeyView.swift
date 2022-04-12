@@ -14,7 +14,7 @@ struct KeyView: View {
 
     var body: some View {
         Button {
-            viewModel.input.append(letter)
+            viewModel.addLetter(letter)
         } label: {
             Text(letter)
                 .font(.system(.body, design: .monospaced).bold())
